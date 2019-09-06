@@ -1,0 +1,205 @@
+  @import url('https://fonts.googleapis.com/css?family=Montserrat|Raleway&display=swap');
+  * {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #222;
+    background-color: #FFF;
+    font: 12pt "Raleway";
+  }
+
+  .page {
+    size: auto;
+    width: 21cm;
+    min-height: 29.7cm;
+    padding: 2cm !important;
+    margin: 1cm auto;
+    border: 1px 333 solid;
+    border-radius: 5px;
+    background-color: white;
+    background: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    page-break-after: always;
+  }
+
+  @page {
+    size: A4;
+    margin: 0;
+    padding: 2cm !important;
+  }
+
+  @media print {
+    .page {
+      margin: 0;
+      border: initial;
+      border-radius: initial;
+      width: initial;
+      padding: 2cm !important;
+      min-height: initial;
+      box-shadow: initial;
+      background: #FFFFFF;
+      background-color: #FFFFFF;
+      page-break-after: auto;
+    }
+
+    @page {
+      padding: 20mm !important;
+      margin: 20mm 0 10mm 0;
+      size: auto;
+    }
+
+    .content-block {
+      page-break-after: auto;
+      page-break-inside: auto;
+    }
+  }
+
+  .header {
+    margin-left: -2cm;
+    margin-top: -2cm;
+    width: 21cm;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    border-top: 7px solid #71b058;
+    border-top: 7px solid #f0eb59;
+    border-top: 7px solid #81c9c6;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 2cm 50px;
+  }
+
+  .header-left {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header-right {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    text-align: right;
+  }
+
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 170px;
+    margin-bottom: 20px;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .content-left {
+    width: 30%;
+    padding-right: 2%;
+    margin-right: 2%;
+  }
+
+  .content-right {
+    width: 70%;
+  }
+
+  .content-block {
+    margin-bottom: 40px;
+  }
+
+  h1 {
+    font-family: Montserrat;
+    text-transform: uppercase;
+    margin-bottom: 0;
+  }
+
+  h3 {
+    margin: 0 0 10px;
+    font-family: Montserrat;
+  }
+
+  h4 {
+    margin: 0;
+    font-weight: normal;
+    font-size: 13px;
+  }
+
+  h5 {
+    margin-top: 6px;
+    margin-bottom: 0;
+    font-weight: normal;
+  }
+
+  h6 {
+    margin: 0;
+    font-size: 12px;
+    font-weight: 200;
+  }
+
+  .subtitle {
+    margin: 14px 0 6px;
+  }
+
+  .footer-github p {
+    font-size: 10px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  i {
+    font-size: 9px;
+  }
+
+  .list-item {
+    margin-bottom: 8px;
+  }
+
+  .link-overlay {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    color: black;
+  }
+
+  .link-overlay:visited {
+    text-decoration: none;
+  }
+
+  .link-overlay:after {
+      content: "";
+      background-color: #71b058;
+      background-color: #f0eb59;
+      background-color: #67b8b4;
+      opacity: 0.2;
+      height: 11px;
+      width: 100%;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+  }
+
+  .bold {
+    font-weight: bold;
+  }
+
+  .social-icon img {
+    width: 16px;
+    height: 16px;
+    margin-left: 10px;
+  }
+
+  .social-bar {
+    margin-top: 12px;
+    height: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
